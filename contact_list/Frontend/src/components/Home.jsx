@@ -17,6 +17,7 @@ const CREATE_CONTACT = gql`
       id
       name
       phone
+      
     }
   }
 `;
@@ -106,8 +107,8 @@ const Home = () => {
 
   return (
     <>
-      {/* ... Your existing JSX code for input fields ... */}
-           {/* Input fields for adding new contact */}
+      
+           {/*Adding new contact */}
       <div className="input_container">
         <input
           type="text"

@@ -1,14 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './components/Home'
+import Home from "./components/Home";
+import { client } from "./client/apolloClient";
+import { ApolloProvider } from "@apollo/client";
 const App = () => {
   return (
-    <>
-      <BrowserRouter>
+    <ApolloProvider client={client}>
+      <>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home />} ></Route>
+          {/* <Route path="/gitapi" element={<Home/>} />           */}
         </Routes>
-      </BrowserRouter>
-    </>
+      </>
+    </ApolloProvider>
   );
 };
 
