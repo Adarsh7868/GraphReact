@@ -1,24 +1,19 @@
-    
 import React from 'react'
 import { useQuery, gql, useMutation } from "@apollo/client";
 
 const GET_REPOS = gql`
   query {
     viewer {
-                               #  //to show all Branches
-      Branch {
-        name
-      }
-
                             # //to show all repo's
-      # repositories(first: 100) {
-      #   nodes {
-      #         name
-      #         id
-      #      }
+      repositories(first: 100) {
+        nodes {
+          id
+          name 
+
+           }
       }
     }
-  
+  }
 `;
 const Home2 = () => {
 
