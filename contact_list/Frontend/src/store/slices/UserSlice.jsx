@@ -18,3 +18,5 @@ const user = createSlice({
 })
 
 export {users}
+
+//9 august user slice
