@@ -9,6 +9,6 @@ Currently, two official plugins are available:
 
 graphReact branch updated
 
-Graph Branch updtaed 2
+GIt API branch update
 branch 1
 
